@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>'
+    <style>
+        /* 将ol中的li选出来 */
+        ol li {
+            color: pink;
+        }
+        /* 元素1 元素2 {样式声明} */
+        /* 元素1与元素2之间必须用空格隔开且1是2的父元素，2只要是1的后代即可（子孙） */
+        /* ol a {
+            color: green;
+            text-decoration: none;
+        } */
+        /* 依层查找 */
+        ol li a {
+            color: green;
+            text-decoration: none;
+        }
+        .nav li a {
+            color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <p>后代选择器又称包含选择器</p>
+    <p>可以选父元素中的子元素</p>
+    <ul>
+        <li>ul中的li</li>
+        <li>ul中的li</li>
+        <li>ul中的li</li>
+    </ul>
+    <ul class="nav"> 
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li><a href="#">我是导航栏</a></li>
+        <li><a href="#">我是导航栏</a></li>
+    </ul>
+    <ol>
+        我不在li里面
+        <li>ol中的li</li>
+        <li>ol中的li</li>
+        <li>ol中的li</li>
+        <li><a href="#">li的儿子，ol的孙子</a></li>
+    </ol>
+</body>
+</html>

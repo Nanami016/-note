@@ -1,0 +1,21 @@
+/* 1.先将 a转换为块级元素 */
+a {
+    display: block;
+    width: 235px;
+    height: 45px;
+    background-color: #A57A3C;
+    font-size: 14px;
+    font-weight: 530;
+    text-decoration: none;
+    color: white;
+    text-indent: 2em;
+/* 3.单行文字垂直居中 */
+/* 解决方案：让文字的行高 = 盒子的高度 */
+    line-height: 45px;
+    
+}
+/* 2.鼠标经过链接变换颜色 */
+a:hover {
+    background-color: #FF6700;
+}
+
